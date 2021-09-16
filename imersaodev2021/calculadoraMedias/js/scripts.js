@@ -1,6 +1,5 @@
 // Calcula Médias de quatro notas
 
-var nome = "Teruo";
 
 // Declara as variáveis das notas em cada bimestre
 var notaPrimeiroBimestre = 9;
@@ -15,9 +14,14 @@ console.log (mediaFinal);
 
 // Apresenta a média no console, fixando o resultado em uma casa decimal. .toFixed
 
-console.log("Bem vindo " + nome);
 
 function calculaMedia() {
+
+    var nome = document.getElementById("seuNome").value;
+
+    console.log("Bem vindo " + nome);
+
+
     var elementoCalculoMedia = document.getElementById("revelaNota");
     console.log(elementoCalculoMedia);
     

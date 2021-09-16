@@ -1,11 +1,7 @@
 body {
   font-family: 'Roboto Mono',monospace;
   min-height: 400px;
-  background-image: url('https://image.flaticon.com/icons/png/512/201/201635.png');
-  background-color: #000000;
-  background-size: 80vh;
-  background-position: center bottom;
-  background-repeat: no-repeat;
+  /* background-image: url('https://image.flaticon.com/icons/png/512/201/201635.png'); */
 }
 
 .container {
@@ -15,12 +11,12 @@ body {
 }
 
 .page-title {
-  color:#ffffff;
+  color:#ffcc00;
   margin: 0 0 5px;
 }
 
 .page-subtitle {
-  color:#ffffff;
+  color:#ddddd;
   margin-top: 5px;
 }
 
