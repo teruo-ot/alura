@@ -17,7 +17,12 @@ console.log (mediaFinal);
 
 console.log("Bem vindo " + nome);
 
+function calculaMedia() {
+    var elementoCalculoMedia = document.getElementById("revelaNota");
+    console.log(elementoCalculoMedia);
+    
+    var mediaCalculada = "Sua média é " + mediaFinal;
 
-var elementoMedia = document.getElementById ("revelaNota");
+    elementoCalculoMedia.innerHTML = mediaCalculada
+}
 
-console.log (elementoMedia);
