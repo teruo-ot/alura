@@ -1,15 +1,11 @@
 function calculaMedia() { // Calcula Médias de quatro notas
 
-    // Recebe o nome
+    // Recebe o nome do form e apresenta a saudação
     var nome = document.getElementById("seuNome").value;
+    // var elementoNome = document.getElementById("boasVindas");
+    // elementoNome.innerHTML = "Bem-vindo " + nome;
 
-    var elementoNome = document.getElementById("boasVindas");
-
-    var saudacao = "Bem-vindo " + nome;
-
-    elementoNome.innerHTML = saudacao;
-
-
+    document.getElementById("boasVindas").innerHTML = "Bem-vindo " + nome;
 
     // Recebe do form html as variáveis das notas em cada bimestre
     var notaPrimeiroBimestre = parseFloat(document.getElementById("nota1b").value);
@@ -22,9 +18,9 @@ function calculaMedia() { // Calcula Médias de quatro notas
 
     // Apresenta a média no console, fixando o resultado em uma casa decimal. .toFixed
 
-    var elementoCalculoMedia = document.getElementById("revelaNota");
-    
-    var mediaCalculada = "Sua média é " + mediaFinal;
-    elementoCalculoMedia.innerHTML = mediaCalculada
+    // var elementoCalculoMedia = document.getElementById("revelaNota");
+    // elementoCalculoMedia.innerHTML = "Sua média é " + mediaFinal;
+
+    document.getElementById("revelaNota").innerHTML = "Sua média é " + mediaFinal;
 }
 
