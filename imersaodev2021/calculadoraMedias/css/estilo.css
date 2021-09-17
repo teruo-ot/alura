@@ -8,6 +8,10 @@ body {
   background-repeat: no-repeat;
 }
 
+label {
+  color: #ffffff;
+}
+
 .container {
   text-align: center;
   padding: 20px;
