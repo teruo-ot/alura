@@ -1,4 +1,3 @@
-var listaFilmes = [""];
 
 function adicionarFilme() {
     var filmeFavorito = document.getElementById("filme").value;
