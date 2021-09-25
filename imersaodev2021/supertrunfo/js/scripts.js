@@ -63,7 +63,10 @@ function exibirOpcoes () {
 
 function obtemAtributoSelecionado() {
     var radioAtributos = document.getElementsByName("atributo");
-    for (i = 0; i < radioAtributos.length; i++) {
+
+    console.log("Atributos Radio : " + radioAtributos.value);
+
+    for (var i = 0; i < radioAtributos.length; i++) {
         if (radioAtributos[i].checked == true) {
             return radioAtributos[i].value;
         }
@@ -72,23 +75,28 @@ function obtemAtributoSelecionado() {
 
 function jogar() {
     var atributoSelecionado = obtemAtributoSelecionado();
-    var elementoResultado = document.getElementsByName("resultado");
+
+    var elementoResultado = document.getElementById("resultado");
+    
     var valorCartaJogador = cartaJogador.atributos[atributoSelecionado];
-    console.log(valorCartaJogador);
+    console.log("Jogador: " + valorCartaJogador);
     var valorCartaMaquina = cartaMaquina.atributos[atributoSelecionado];
-    console.log(valorCartaMaquina);
+    console.log("Máquina: " + valorCartaMaquina);
+
+
 
     if (valorCartaJogador > valorCartaMaquina) {
-        console.log("Máquina")
-        elementoResultado.innerHTML = "Você Venceu!"
+        console.log("Jogador");
+        elementoResultado.innerHTML = "Você Venceu!";
+
     } else if (valorCartaMaquina > valorCartaJogador) {
-        console.log("VocÊ")
+        console.log("VocÊ");
 
-        elementoResultado.innerHTML = "Você Perdeu!"
+        elementoResultado.innerHTML = "Você Perdeu!";
     } else {
-        console.log("Empatou")
+        console.log("Empatou");
 
-        elementoResultado.innerHTML = "Empatou!"
+        elementoResultado.innerHTML = "Empatou!";
     }
 console.log (cartaMaquina);
  console.log("jogou");
